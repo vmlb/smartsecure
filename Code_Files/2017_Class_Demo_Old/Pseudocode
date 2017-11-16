@@ -1,0 +1,20 @@
+if data is multimedia
+    protocol = DTLS
+    ciphertype = stream
+else
+    if size > x
+        protocol = DTLS
+        ciphertype = stream
+    else
+        protocol = TLS
+        ciphertype = block
+
+if energy < 6
+    eliminate resource-intensive encryption schemes
+
+if min(CPU, MEM) < 4
+    choose low level security scheme
+if min(CPU, MEM) < 7
+    choose medium level security scheme
+else
+    choose robust security scheme

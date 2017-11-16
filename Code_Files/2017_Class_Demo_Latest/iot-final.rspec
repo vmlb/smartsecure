@@ -1,0 +1,24 @@
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/request.xsd" type="request">
+  <node client_id="Gateway" exclusive="false">
+    <emulab:routable_control_ip xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image xmlns="http://www.geni.net/resources/rspec/3" name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU12-64-STD"/>
+    </sliver_type>
+    <interface client_id="Gateway:if0">
+      <flack:interface_info xmlns:flack="http://www.protogeni.net/resources/rspec/ext/flack/1" addressBound="false" bound="false"/>
+    </interface>
+    <flack:node_info xmlns:flack="http://www.protogeni.net/resources/rspec/ext/flack/1" x="167" y="134" unbound="true"/>
+    <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+    <services xmlns="http://www.geni.net/resources/rspec/3"/>
+  </node>
+  <node client_id="Controller" exclusive="false">
+    <emulab:routable_control_ip xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1"/>
+    <sliver_type name="emulab-xen">
+      <disk_image xmlns="http://www.geni.net/resources/rspec/3" name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU12-64-STD"/>
+    </sliver_type>
+    <flack:node_info xmlns:flack="http://www.protogeni.net/resources/rspec/ext/flack/1" x="319" y="264" unbound="true"/>
+    <site xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" id="Site 1"/>
+    <services xmlns="http://www.geni.net/resources/rspec/3"/>
+  </node>
+  <flack:slice_info xmlns:flack="http://www.protogeni.net/resources/rspec/ext/flack/1" view="graph"/>
+</rspec>
