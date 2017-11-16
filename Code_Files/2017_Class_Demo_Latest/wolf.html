@@ -1,0 +1,269 @@
+<html lang="en">
+<head>
+    <title>Software Requirements</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            max-width:1200px;
+            margin:0px auto;
+            border: 1px solid;
+            border-radius: 4px;
+            border-color: lightgrey;
+            padding-bottom: 20px;
+        }
+
+        .radio label, .checkbox label{
+            font-weight: 300;
+        }
+
+        .navbar-default{
+            background: -webkit-linear-gradient(top,#fbe8bc 3%,#f6d075 16%,#f1b82d 75%) !important;
+            background: linear-gradient(top,#fbe8bc 3%,#f6d075 16%,#f1b82d 75%);
+            text-shadow: 0px 1px 1px #fcf1d4;
+            min-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <h2>Software Requirements</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <form action="http://localhost:8000/decider.php" method="POST" id="reqform">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>What type of data will you be transmitting?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data_type" id="optionsRadios1" value="multimedia">
+                                Multimedia
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data_type" id="optionsRadios2" value="text">
+                            Text
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data_type" id="optionsRadios3" value="other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>What will be the size of the transmitted data?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data_size" id="optionsRadios4" value="128">
+                                Less than 128 bits
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="data_size" id="optionsRadios5" value="256">
+                                128 bits or more
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>What is the energy capacity of this device?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="energy" id="optionsRadios6" value="1">
+                                1. Very Low Energy Capacity
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="energy" id="optionsRadios7" value="2">
+                                2. Low Energy Capacity
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="energy" id="optionsRadios8" value="3">
+                                3. Moderate Energy Capacity
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="energy" id="optionsRadios9" value="4">
+                                4. High Energy Capacity
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="energy" id="optionsRadios10" value="5">
+                                5. Very High Energy Capacity
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>What is the processing power of this device's CPU</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="cpu" id="optionsRadios11" value="1">
+                                1. Less than 75MHz
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="cpu" id="optionsRadios12" value="2">
+                                2. 75MHz - 250MHz
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="cpu" id="optionsRadios13" value="3">
+                                3. 250MHz - 750MHz
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="cpu" id="optionsRadios14" value="4">
+                                4. 750MHz - 1.5GHz
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="cpu" id="optionsRadios15" value="5">
+                                5. Greater than 1.5GHz
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>What is the memory capacity of this device?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="memory" id="optionsRadios16" value="1">
+                                1. Smaller than 100KB
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="memory" id="optionsRadios17" value="2">
+                                2. 100KB - 10MB
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="memory" id="optionsRadios18" value="3">
+                                3. 10MB - 250MB
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="memory" id="optionsRadios19" value="4">
+                                4. 250MB - 1GB
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="memory" id="optionsRadios20" value="5">
+                                5. Larger than 1GB
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Would you like to use session resumption?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="resumption" id="optionsRadios21" value="True">
+                                1. Yes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="resumption" id="optionsRadios22" value="False">
+                                2. No
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Enter the message you would like to send:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <textarea name="message" class="form-control" maxlength="80" rows="3" form="reqform"></textarea>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
